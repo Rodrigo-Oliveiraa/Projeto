@@ -1,0 +1,113 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('Aguia2.jpg'); /* Adicionando a imagem de fundo */
+    background-size: cover; /* A imagem cobre toda a área */
+    background-position: center; /* Centralizando a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative; /* Para garantir que os filhos possam ser posicionados em relação ao body */
+    background-attachment: fixed; /* A imagem de fundo não se move ao rolar a página */
+}
+
+/* Contêiner principal para o título e o formulário */
+.container {
+     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência para legibilidade */
+    padding: 30px; /* Padding ao redor do conteúdo */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o contêiner */
+    width: 100%;
+    max-width: 400px; /* Limite de largura para evitar que o formulário fique muito largo */
+}
+
+/* Título do formulário */
+h2 {
+    margin-bottom: 10px; /* Diminuindo a margem inferior */
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Centralizando o título */
+}
+
+/* Estilizando o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Diminuindo o espaçamento entre os campos */
+    position: relative;
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"] {
+    padding: 14px 24px; /* Aumentado o padding horizontal (24px) */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Arredondamento um pouco maior */
+    font-size: 18px; /* Fonte maior para os campos */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão de submit */
+input[type="submit"] {
+    background-color: #2f7ac0;
+    color: #fff;
+    border: none;
+    padding: 14px; /* Ajustado o padding para menor altura */
+    border-radius: 8px; /* Arredondamento do botão */
+    font-size: 18px; /* Fonte maior no botão */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito no botão de submit */
+input[type="submit"]:hover {
+    background-color: #396da8;
+}
+
+/* Links abaixo do formulário */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center; /* Centralizando os links */
+    display: block; /* Transformando os links em blocos para ficarem em linhas separadas */
+}
+
+/* Efeito para os links */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo específico para o link de "Não tem uma conta?" */
+.back-to-register {
+    font-size: 14px;
+    color: #007bff;
+    margin-top: 5px; /* Ajustado a margem superior */
+}
+
+/* Responsividade: ajusta o layout em dispositivos móveis */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"], input[type="submit"] {
+        font-size: 16px; /* Ajustado para telas menores */
+        padding: 12px 20px; /* Ajustado o padding horizontal (20px) para telas menores */
+    }
+}

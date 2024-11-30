@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Extreme-Car </title>
+    <link rel="stylesheet" href="carro.css">
+
+</head>
+
+<body>
+
+    <div class="auth-btns-container">
+
+        <a href="login-tela.html" id="loginBtn"> <button>Entrar</button> </a>
+
+        <a href="cadastro.html" id="signupBtn"><button>Criar Conta</button></a>
+
+    </div>
+
+    <header>
+
+        <h1> Extreme-Car </h1>
+        <p> "Acelerando seus sonhos, com potência e confiança!" </p>
+
+    </header>
+
+    <nav>
+
+        <a href="#carros">Carros</a>
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+    <div class="container" id="carros">
+
+        <h2>Nossos Carros</h2>
+        
+        <!-- Carros -->
+        <div class="car">
+            <img src="carro_lambo.jpg" alt="Lamborghini Aventador">
+            <div class="car-details">
+
+                <h3> <a href="detalhes-lamborghini.html" class="car-link">Lamborghini Aventador</a> </h3>
+                <p>R$ 5.000.000,00</p>
+                <p>Acelere seus limites, conquiste a eternidade.</p>
+                <button onclick="toggleInfo('info1')">Mais informações</button>
+                <div id="info1" class="more-info">
+                    <p>O Lamborghini Aventador é um supercarro com motor V12 de 6.5 litros, entregando 730 cv na versão standard e até 770 cv na versão SVJ. Ele acelera de 0 a 100 km/h em 2,9 segundos. Seu desempenho incrível e design agressivo fazem do Aventador uma das máquinas mais desejadas do mundo.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="carro_audir8.jpg" alt="Audi R8">
+            <div class="car-details">
+
+                <h3> <a href="detalhes-audir8.html" class="car-link">Audi R8</a> </h3>
+                <p>R$ 180.000,00</p>
+                <p>Supercarro que combina desempenho de alto nível com design sofisticado e tecnológico.</p>
+                <button onclick="toggleInfo('info2')">Mais informações</button>
+                <div id="info2" class="more-info">
+                    <p>O Audi R8 é um supercarro com motor V10 de 5.2 litros, entregando 570 cv na versão padrão e até 620 cv no modelo Performance. Ele acelera de 0 a 100 km/h em 3,4 segundos na versão básica e 3,1 segundos na versão Performance. Seu design e desempenho fazem dele um dos carros mais emblemáticos da marca.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="carro_mustang.jpg" alt="Ford mustang">
+            <div class="car-details">
+
+                <h3> <a href="detalhes-fordmustang.html" class="car-link">Ford mustang</a> </h3>
+                <p>R$ 500.000,00</p>
+                <p>Alta performance e design arrojado.</p>
+                <button onclick="toggleInfo('info3')">Mais informações</button>
+                <div id="info3" class="more-info">
+                    <p>O Ford Mustang é um carro esportivo icônico com até 450 cv no modelo GT e aceleração de 0 a 100 km/h em 4 segundos. Seu design agressivo, som inconfundível e desempenho potente fazem dele um símbolo de estilo e performance no mundo dos esportivos. Com opções de motores V8 e turbo, ele oferece aceleração rápida e uma experiência de direção emocionante.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="carro_ferrari.jpg" alt="Ferrari PuroSangue">
+            <div class="car-details">
+
+                <h3> <a href="detalhes-ferraripurosangue.html" class="car-link">Ferrari PuroSangue</a></h3>
+                <p>R$ 7.400.000,00</p>
+                <p>A excelência que corre em nossas veias</p>
+                <button onclick="toggleInfo('info4')">Mais informações</button>
+                <div id="info4" class="more-info">
+                    <p>O Purosangue atual nem tentou ser ecológico ou recorreu à eletrificação. Ao invés disso, usa um motor 6.5 V12 aspirado que tem a maior potência de qualquer carro GT da Ferrari em sua história: 725 cv e 73 kgfm de torque. Este propulsor entrega 80% de seu torque a apenas 2.100 rpm e a potência máxima chega em 7.750 rpm, mas o motor pode alcançar os 8.250 rpm. O Purosangue atinge os 100 km/h em 3,3 segundos e tem uma velocidade máxima acima de 310 km/h.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="carro_koenigsegg.jpg" alt="Koenigsegg Gemera">
+            <div class="car-details">
+
+                <h3> <a href="detalhes-koenigsegggemera.html" class="car-link">Koenigsegg Gemera</a> </h3>
+                <p>R$ 20.000.000,00</p>
+                <p>A potência do futuro, no presente.</p>
+                <button onclick="toggleInfo('info5')">Mais informações</button>
+                <div id="info5" class="more-info">
+                    <p>O Gemera adiciona novos elementos a essa fórmula. Para começo de conversa, tem propulsão híbrida: é equipado com três motores elétricos e um 2.0 turbo a combustão. Não se engane pela cilindrada aparentemente modesta para a proposta: juntas, as unidades desenvolvem assustadores 1.700 cv de potência. Essa verdadeira cavalaria consegue levar o supercarro da imobilidade aos 100 km/h em apenas 1,9 seg e a uma velocidade máxima superior a 400 km/h.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="carro_bugattichiron.jpg" alt="Bugatti Chiron">
+            <div class="car-details">
+
+                <h3> <a href="detalhes-bugattichiron.html" class="car-link">Bugatti Chiron</a> </h3>
+                <p>R$ 50.000.000,00</p>
+                <p>A perfeição em velocidade e luxo.</p>
+                <button onclick="toggleInfo('info6')">Mais informações</button>
+                <div id="info6" class="more-info">
+                    <p>O Bugatti Chiron é equipado com um motor W16 de 8.0 litros, gerando impressionantes 1.500 cavalos de potência. Ele acelera de 0 a 100 km/h em apenas 2,4 segundos, alcançando uma velocidade máxima de 420 km/h.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="carro_porche911.jpg" alt=" Porsche 911">
+            <div class="car-details">
+
+                <h3> <a href="detalhes-porsche911.html" class="car-link"> Porsche 911</a> </h3>
+                <p>R$ 2.000.000,00</p>
+                <p>Desempenho extremo com a precisão de um carro de pista.</p>
+                <button onclick="toggleInfo('info7')">Mais informações</button>
+                <div id="info7" class="more-info">
+                    <p>A Porsche 911 é equipada com um motor flat-6 que varia de 385 a 640 cavalos de potência, dependendo da versão. Ela acelera de 0 a 100 km/h em cerca de 3,5 segundos, com uma velocidade máxima que pode ultrapassar os 330 km/h.</p>
+
+                </div>
+            </div>
+        </div>
+
+</div>
+
+    <footer id="contato">
+
+        <p>Entre em contato: (11) 99859-8407 |  Extreme-car@gmail.com.br</p>
+        <p>&copy; 2024  Extreme-Car. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <script src="carro.js"></script>
+
+</body>
+
+</html>

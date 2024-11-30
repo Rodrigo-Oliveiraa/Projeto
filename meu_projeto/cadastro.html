@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="criar-conta.css">
+</head>
+
+<body>
+
+    <!-- Contêiner principal para o título, o formulário e os links -->
+    <div class="container">
+        <h2>Cadastro</h2>
+
+        <!-- Formulário que envia os dados para criar-conta-processar.php -->
+        <form id="form-cadastro" action="criar-conta-processar.php" method="POST">
+
+            <!-- Campos do formulário -->
+            <input type="text" name="username" placeholder="Escolha um nome de usuário" id="username" required>
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            <input type="text" name="cpf" placeholder="Digite seu CPF" maxlength="14" required>
+            <input type="text" name="telefone" placeholder="Digite seu telefone" maxlength="15" required>
+            <input type="date" name="data-nascimento" required>
+            <input type="password" name="password" placeholder="Escolha uma senha" required>
+            <input type="password" name="confirmar-senha" placeholder="Confirmar senha" required>
+            <input type="submit" value="Criar Conta">
+
+        </form>
+
+        <!-- Links abaixo do formulário -->
+        <a href="login-tela.html" class="back-to-register">Já tem uma conta? Faça login.</a>
+
+    </div>
+
+</body>
+
+</html>
